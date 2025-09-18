@@ -49,5 +49,5 @@ void main(List<String> args) {
 
   var tinggi_badan; //Dynamic
   tinggi_badan = 162;
-  tinggi_badanN = "Satu enam dua";
+  tinggi_badan = "Satu enam dua";
 }
