@@ -21,6 +21,8 @@ void main() {
   birthDay3("Ello", age: 15);
   birthDay3("Vladimir",  weight: 90.8);
   birthDay3("Guerero", height: 60.8);
+  print('Luas Lingkaran : ${luasLingkaran(10)}');
+  print('keliling Lingkaran : ${kelilingLingkaran(10)}');
 
   /**
    * unutk memanggil dengan parameter optinal
@@ -47,3 +49,28 @@ void birthDay3(String name, {int age = 17, weight = 50.6, height = 162}) {
       beratmu $weight kg  
       tinggimu $height cm""");
 }
+
+
+/**
+ * num adalah tipe data untuk angka
+ * nama function nya [luasLingkaran]
+ * memiliki parameter r (jari-jari)
+ */
+// buat variable global
+const pi = 3.14; //variable konsta global
+
+num luasLingkaran (num r) {
+  return 1.14 * r * r;
+  //num luasLingkaran (num r) => pi * r * r;
+}
+
+//arrow function
+num kelilingLingkaran(num r) => 2 * pi * r;
+
+//default
+num luasPersegi(num sisi) => sisi * sisi;
+/**
+ * => adalah arrow function
+ * hanya dapat digunakan untuk function
+ * yang memiliki satu baris
+ */
